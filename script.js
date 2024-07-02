@@ -2,20 +2,19 @@
 window.addEventListener("scroll", reveal);
 
 function reveal() {
-  const reveals = document.querySelectorAll(".fade-in");
+  let reveals = document.querySelectorAll(".fade-in");
 
-  reveals.forEach((reveal) => {
+  for (let i = 0; i < reveals.length; i++) {
     let windowheight = window.innerHeight;
-    let revealTop = reveal.getBoundingClientRect().top;
+    let revealTop = reveals[i].getBoundingClientRect().top;
     let revealPoint = 150;
 
     if (revealTop < windowheight - revealPoint) {
-      reveal.classList.add("active-fade-in");
+      reveals[i].classList.add("active");
     } else {
-      reveal.classList.remove("active-fade-in");
+      reveals[i].classList.remove("active");
     }
-  });
-  s;
+  }
 }
 
 // mobibe menu
