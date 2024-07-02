@@ -21,37 +21,27 @@
   </head>
   <body>
     <!-- nav bar -->
-
     <header class="header">
       <h2 class="logo">Thainá Oliveira</h2>
-      <nav class="navbar">
-        <a href="#home" class="nav-link home">Home</a>
-        <a href="#about" class="nav-link">Sobre Mim</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projetos" class="nav-link">Projetos</a>
-        <a href="./index.html#contact" class="nav-link contact-us">Contato</a>
 
-        <div class="mobile-menu-icon">
-          <button onclick="menuShow()">
-            <svg xmlns="http://www.w3.org/2000/svg"
-            class="icon-menu"
-            width="24"
-            height="24"
-           style="fill: #faf9f6">
-           <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-          </svg>
-            
-          </button>
-        </div>
-      </nav>
-
-      <div class="mobile-menu">
-        <a href="#home" class="nav-link home">Home</a>
-        <a href="#about" class="nav-link">Sobre Mim</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projetos" class="nav-link">Projetos</a>
-        <a href="./index.html#contact" class="nav-link contact-us">Contato</a>
+      <button class="mode-indicator deactive" type="button">Light Mode</button>
+   
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+      
+      <nav class="navbar">
+        <ul>
+          <a href="#home" class="nav-link home">Home</a>
+          <a href="#about" class="nav-link">Sobre Mim</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="./index.html#contact" class="nav-link contact-us">Contato</a>
+          <li><button class="mode-indicator" type="button">Light Mode</button></li>
+        </ul>
+      </nav>
     </header>
     <div class="container section" id="home">
       <!-- main container with social media link, selfie and cv -->
